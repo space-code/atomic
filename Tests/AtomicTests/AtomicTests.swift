@@ -7,10 +7,15 @@
 import XCTest
 
 final class AtomicTests: XCTestCase {
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(Atomic().text, "Hello, World!")
+    // MARK: Properties
+
+    @Atomic var dict = [Int: String]()
+
+    // MARK: Tests
+
+    func test_thatAtomicPropertyChangesValue() {
+        DispatchQueue.concurrentPerform(iterations: 1000) { _ in
+            self.dict[.random(in: 0 ... 1000)] = "test"
+        }
     }
 }
