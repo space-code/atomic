@@ -3,13 +3,14 @@
 <p align="center">
 <a href="https://github.com/space-code/atomic/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/space-code/atomic?style=flat"></a> 
 <a href="https://developer.apple.com/"><img alt="Platform" src="https://img.shields.io/badge/platform-ios%20%7C%20osx%20%7C%20watchos%20%7C%20tvos-%23989898"/></a> 
-<a href="https://developer.apple.com/swift"><img alt="Swift5.5" src="https://img.shields.io/badge/language-Swift5.5-orange.svg"/></a>
+<a href="https://developer.apple.com/swift"><img alt="Swift5.7" src="https://img.shields.io/badge/language-Swift5.7-orange.svg"/></a>
 <a href="https://github.com/space-code/atomic"><img alt="CI" src="https://github.com/space-code/atomic/actions/workflows/ci.yml/badge.svg?branch=main"></a>
-<a href="https://github.com/apple/swift-package-manager" alt="RxSwift on Swift Package Manager" title="RxSwift on Swift Package Manager"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" /></a>
+<a href="https://github.com/apple/swift-package-manager" alt="Atomic on Swift Package Manager" title="Atomic on Swift Package Manager"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" /></a>
+<a href="https://codecov.io/gh/space-code/atomic"><img alt="CodeCov" src="https://codecov.io/gh/space-code/atomic/graph/badge.svg?token=XEAA2PB5PP"></a>
 </p>
 
 ## Description
-`atomic` is a fast, safe class for making values thread-safe in Swift.
+`atomic` is a Swift property wrapper designed to make values thread-safe.
 
 - [Usage](#usage)
 - [Requirements](#requirements)
@@ -37,7 +38,7 @@ Once you have your Swift package set up, adding `atomic` as a dependency is as e
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/space-code/atomic.git", .upToNextMajor(from: "0.0.1"))
+    .package(url: "https://github.com/space-code/atomic.git", .upToNextMajor(from: "1.0.0"))
 ]
 ```
 
