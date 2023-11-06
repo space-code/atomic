@@ -68,7 +68,7 @@ public final class Atomic<Value> {
 
 extension Atomic: Equatable where Value: Equatable {
     public static func == (lhs: Atomic<Value>, rhs: Atomic<Value>) -> Bool {
-        lhs.read { left in rhs.read { right in left == right }}
+        lhs.read { left in rhs.read { right in left == right } }
     }
 }
 

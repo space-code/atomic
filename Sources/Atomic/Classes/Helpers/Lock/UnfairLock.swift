@@ -17,7 +17,7 @@ final class UnfairLock {
     // MARK: Initialization
 
     /// Initializes an UnfairLock instance.
-    public init() {
+    init() {
         unfairLock = .allocate(capacity: 1)
         unfairLock.initialize(to: os_unfair_lock())
     }
