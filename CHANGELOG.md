@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ## Added
+- Updating pre-commit hook rules
+  - Added in Pull Request [#5](https://github.com/space-code/atomic/pull/5).
 
 - Integrate `CodeCov`
   - Added in Pull Request [#4](https://github.com/space-code/atomic/pull/4).
