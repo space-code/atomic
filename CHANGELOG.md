@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ## Added
+- Add `visionOS` support
+  - Added in Pull Request [#6](https://github.com/space-code/atomic/pull/6).
+
 - Updating pre-commit hook rules
   - Added in Pull Request [#5](https://github.com/space-code/atomic/pull/5).
 
