@@ -6,11 +6,12 @@ on:
       - main
       - dev
   pull_request:
-    branches: [ main ]
-
-concurrency:
-  group: ci
-  cancel-in-progress: true
+    paths:
+      - '.swiftlint.yml'
+      - ".github/workflows/**"
+      - "Package.swift"
+      - "Source/**"
+      - "Tests/**"
 
 jobs:
   Latest:
