@@ -1,13 +1,23 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-#### 1.0.x Releases
-- `1.0.x` Releases - [1.0.0](#100)
+
+#### 1.x Releases
+- `1.0.1` Releases - [1.0.0](#100) | [1.0.1](#101)
 
 #### 0.0.x Releases
 - `0.0.x` Releases - [0.0.1](#001)
 
 ---
+
+## [1.0.1](https://github.com/space-code/atomic/releases/tag/1.0.1)
+Released on 2024-01-23.
+
+## Added
+- Add files to comply with community standards
+  - Added in Pull Request [#11](https://github.com/space-code/atomic/pull/11).
+- Update GitHub Actions Workflow
+  - Added in Pull Request [#10](https://github.com/space-code/atomic/pull/10).
 
 ## [1.0.0](https://github.com/space-code/atomic/releases/tag/1.0.0)
 Released on 2023-11-06.
