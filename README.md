@@ -2,8 +2,8 @@
 
 <p align="center">
 <a href="https://github.com/space-code/atomic/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/space-code/atomic?style=flat"></a> 
-<a href="https://swiftpackageindex.com/space-code/atomic"><img alt="Swift Compability" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fspace-code%2Fatomic%2Fbadge%3Ftype%3Dswift-versions">
-<a href="https://swiftpackageindex.com/space-code/atomic"><img alt="Platform Compability" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fspace-code%2Fatomic%2Fbadge%3Ftype%3Dplatforms">
+<a href="https://swiftpackageindex.com/space-code/atomic"><img alt="Swift Compatibility" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fspace-code%2Fatomic%2Fbadge%3Ftype%3Dswift-versions">
+<a href="https://swiftpackageindex.com/space-code/atomic"><img alt="Platform Compatibility" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fspace-code%2Fatomic%2Fbadge%3Ftype%3Dplatforms">
 <a href="https://github.com/space-code/atomic"><img alt="CI" src="https://github.com/space-code/atomic/actions/workflows/ci.yml/badge.svg?branch=main"></a>
 <a href="https://codecov.io/gh/space-code/atomic"><img alt="CodeCov" src="https://codecov.io/gh/space-code/atomic/graph/badge.svg?token=XEAA2PB5PP"></a>
 </p>

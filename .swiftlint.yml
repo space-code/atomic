@@ -3,6 +3,7 @@ excluded:
   - Package.swift
   - .build
   - Package@swift-5.7.swift
+  - Package@swift-5.8.swift
 
 # Rules
 
