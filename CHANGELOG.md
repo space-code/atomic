@@ -14,6 +14,8 @@ All notable changes to this project will be documented in this file.
 Released on 2024-01-23.
 
 ## Added
+- Add files to comply with community standards
+  - Added in Pull Request [#11](https://github.com/space-code/atomic/pull/11).
 - Update GitHub Actions Workflow
   - Added in Pull Request [#10](https://github.com/space-code/atomic/pull/10).
 
