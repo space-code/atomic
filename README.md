@@ -37,7 +37,7 @@ Once you have your Swift package set up, adding `atomic` as a dependency is as e
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/space-code/atomic.git", .upToNextMajor(from: "1.0.0"))
+    .package(url: "https://github.com/space-code/atomic.git", .upToNextMajor(from: "1.1.0"))
 ]
 ```
 
