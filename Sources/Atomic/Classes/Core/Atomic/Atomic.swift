@@ -10,7 +10,7 @@ import Foundation
 /// An `Atomic` property wrapper.
 @propertyWrapper
 @dynamicMemberLookup
-public final class Atomic<Value> {
+public final class Atomic<Value>: @unchecked Sendable {
     // MARK: Properties
 
     private let lock = UnfairLock()
