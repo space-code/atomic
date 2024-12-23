@@ -8,7 +8,7 @@ import XCTest
 
 // MARK: - AtomicTests
 
-final class AtomicTests: XCTestCase {
+final class AtomicTests: XCTestCase, @unchecked Sendable {
     // MARK: Properties
 
     @Atomic private var dict = [Int: String]()
