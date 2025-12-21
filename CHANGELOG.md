@@ -28,6 +28,8 @@ All notable changes to this project will be documented in this file.
 - *(changelog)* Update CHANGELOG.md
 - *(changelog)* Update CHANGELOG.md
 - *(changelog)* Update CHANGELOG.md
+- *(changelog)* Update CHANGELOG.md
+- Remove the swiftpm forlder (#35)
 
 ## [0.0.1] - 2023-06-18
 
