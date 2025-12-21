@@ -6,14 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### 1.x Releases
-- `1.1.x` Releases - [1.1.0](#110)
+- `1.1.x` Releases - [1.1.1](#111) | [1.1.0](#110)
 - `1.0.x` Releases - [1.0.1](#101) | [1.0.0](#100)
 
 #### 0.x Releases
 - `0.0.x` Releases - [0.0.1](#001)
 
 ---
-## [Unreleased]
+
+
+## [1.1.1](https://github.com/space-code/atomic/releases/tag/1.1.1)
+
+Released on 2025-12-21. All issues associated with this milestone can be found using this [filter](https://github.com/space-code/atomic/milestones?state=closed&q=1.1.1).
 
 ### Documentation
 - Update CHANGELOG
@@ -96,7 +100,7 @@ Released on 2023-06-18. All issues associated with this milestone can be found u
 - Implement `Atomic` package
   - Contributed by [@ns-vasilev](https://github.com/ns-vasilev) in Pull Request [#1](https://github.com/space-code/atomic/pull/1).
 
-[unreleased]: https://github.com/space-code/atomic/compare/1.1.0..HEAD
+[1.1.1]: https://github.com/space-code/atomic/compare/1.1.0..1.1.1
 [1.1.0]: https://github.com/space-code/atomic/compare/1.0.1..1.1.0
 [1.0.1]: https://github.com/space-code/atomic/compare/1.0.0..1.0.1
 [1.0.0]: https://github.com/space-code/atomic/compare/0.0.1..1.0.0
