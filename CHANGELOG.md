@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### 📚 Documentation
+
+- Update README.md (#32)
+
 ### ⚙️ Miscellaneous Tasks
 
 - Switch from Makefile to Mise (#17)
@@ -16,6 +20,7 @@ All notable changes to this project will be documented in this file.
 - Automate code formatting and linting with github actions (#22)
 - *(ci)* Add release workflow for GitHub Actions (#23)
 - Add renovate configuration (#30)
+- *(changelog)* Update CHANGELOG.md
 
 ## [0.0.1] - 2023-06-18
 
