@@ -93,7 +93,7 @@ jobs:
 
   merge-test-reports:
     needs: test-apple-platforms
-    runs-on: macos-13
+    runs-on: macos-15
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v4
