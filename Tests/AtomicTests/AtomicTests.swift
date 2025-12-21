@@ -126,20 +126,17 @@ final class AtomicTests: XCTestCase, @unchecked Sendable {
     func test_thatAllReadsReturnSameValue_whenConcurrentReadsOccur() {
         // given
         _counter.write(100)
-        var results: [Int] = []
-        let resultsQueue = DispatchQueue(label: "results.queue")
+        let results = Box<[Int]>([])
 
         // when
         DispatchQueue.concurrentPerform(iterations: .iterations) { _ in
             let value = _counter.read { $0 }
-            resultsQueue.sync {
-                results.append(value)
-            }
+            results.mutate { $0.append(value) }
         }
 
         // then
-        XCTAssertEqual(results.count, .iterations)
-        XCTAssertTrue(results.allSatisfy { $0 == 100 })
+        XCTAssertEqual(results.value.count, .iterations)
+        XCTAssertTrue(results.value.allSatisfy { $0 == 100 })
     }
 
     func test_thatFinalValueIsCorrect_whenConcurrentWritesOccur() {
@@ -159,8 +156,7 @@ final class AtomicTests: XCTestCase, @unchecked Sendable {
     func test_thatOperationsAreSafe_whenMixedReadWritesOccur() {
         // given
         _counter.write(0)
-        var readValues: [Int] = []
-        let readQueue = DispatchQueue(label: "read.queue")
+        let readValues = Box<[Int]>([])
 
         // when
         DispatchQueue.concurrentPerform(iterations: .iterations) { i in
@@ -168,16 +164,14 @@ final class AtomicTests: XCTestCase, @unchecked Sendable {
                 _counter.write { $0 += 1 }
             } else {
                 let value = _counter.read { $0 }
-                readQueue.sync {
-                    readValues.append(value)
-                }
+                readValues.mutate { $0.append(value) }
             }
         }
 
         // then
         let finalValue = _counter.read { $0 }
         XCTAssertEqual(finalValue, .iterations / 2)
-        XCTAssertEqual(readValues.count, .iterations / 2)
+        XCTAssertEqual(readValues.value.count, .iterations / 2)
     }
 
     // MARK: Tests - Dynamic Member Lookup
@@ -253,10 +247,11 @@ final class AtomicTests: XCTestCase, @unchecked Sendable {
     func test_thatAllItemsAppended_whenArrayWrittenConcurrently() {
         // given
         @Atomic var array: [Int] = []
+        let atomicArray = _array
 
         // when
         DispatchQueue.concurrentPerform(iterations: .iterations) { i in
-            _array.write { arr in
+            atomicArray.write { arr in
                 arr.append(i)
             }
         }
@@ -357,6 +352,29 @@ final class AtomicTests: XCTestCase, @unchecked Sendable {
 
         // then
         XCTAssertEqual(result, 20)
+    }
+}
+
+// MARK: AtomicTests.Box
+
+extension AtomicTests {
+    private class Box<T>: @unchecked Sendable {
+        private let lock = NSLock()
+        private var _value: T
+
+        init(_ value: T) {
+            _value = value
+        }
+
+        var value: T {
+            lock.lock(); defer { lock.unlock() }
+            return _value
+        }
+
+        func mutate(_ block: (inout T) -> Void) {
+            lock.lock(); defer { lock.unlock() }
+            block(&_value)
+        }
     }
 }
 
