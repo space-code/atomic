@@ -13,7 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `0.0.x` Releases - [0.0.1](#001)
 
 ---
+## [Unreleased]
 
+### Miscellaneous Tasks
+- Fix the release action
+  - Contributed by [@ns-vasilev](https://github.com/ns-vasilev) in Pull Request [#37](https://github.com/space-code/atomic/pull/37).
 
 ## [1.1.1](https://github.com/space-code/atomic/releases/tag/1.1.1)
 
@@ -100,6 +104,7 @@ Released on 2023-06-18. All issues associated with this milestone can be found u
 - Implement `Atomic` package
   - Contributed by [@ns-vasilev](https://github.com/ns-vasilev) in Pull Request [#1](https://github.com/space-code/atomic/pull/1).
 
+[unreleased]: https://github.com/space-code/atomic/compare/1.1.1..HEAD
 [1.1.1]: https://github.com/space-code/atomic/compare/1.1.0..1.1.1
 [1.1.0]: https://github.com/space-code/atomic/compare/1.0.1..1.1.0
 [1.0.1]: https://github.com/space-code/atomic/compare/1.0.0..1.0.1
