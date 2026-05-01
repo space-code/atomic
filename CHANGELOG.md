@@ -16,6 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Miscellaneous Tasks
+- Update `ci.yml`
+  - Contributed by [@ns-vasilev](https://github.com/ns-vasilev) in Pull Request [#71](https://github.com/space-code/atomic/pull/71).
 - Fix the release action
   - Contributed by [@ns-vasilev](https://github.com/ns-vasilev) in Pull Request [#37](https://github.com/space-code/atomic/pull/37).
 
