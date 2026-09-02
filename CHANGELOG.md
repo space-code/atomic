@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `0.0.x` Releases - [0.0.1](#001)
 
 ---
+<!-- git-cliff: end of header -->
 ## [Unreleased]
 
 ### Miscellaneous Tasks
@@ -87,6 +88,10 @@ Released on 2024-01-23. All issues associated with this milestone can be found u
 ### Uncategorized Changes
 - Release 1.0.1
   - Contributed by [@ns-vasilev](https://github.com/ns-vasilev) in Pull Request [#12](https://github.com/space-code/atomic/pull/12).
+- Add Files to Comply With Community Standards
+  - Contributed by [@ns-vasilev](https://github.com/ns-vasilev) in Pull Request [#11](https://github.com/space-code/atomic/pull/11).
+- Update GitHub Actions Workflow
+  - Contributed by [@ns-vasilev](https://github.com/ns-vasilev) in Pull Request [#10](https://github.com/space-code/atomic/pull/10).
 
 ## [1.0.0](https://github.com/space-code/atomic/releases/tag/1.0.0)
 
@@ -95,10 +100,6 @@ Released on 2023-11-06. All issues associated with this milestone can be found u
 ### Uncategorized Changes
 - Release `1.0.0`
   - Contributed by [@ns-vasilev](https://github.com/ns-vasilev) in Pull Request [#9](https://github.com/space-code/atomic/pull/9).
-- Add Files to Comply With Community Standards
-  - Contributed by [@ns-vasilev](https://github.com/ns-vasilev) in Pull Request [#11](https://github.com/space-code/atomic/pull/11).
-- Update GitHub Actions Workflow
-  - Contributed by [@ns-vasilev](https://github.com/ns-vasilev) in Pull Request [#10](https://github.com/space-code/atomic/pull/10).
 
 ## [0.0.1](https://github.com/space-code/atomic/releases/tag/0.0.1)
 
